@@ -1,0 +1,57 @@
+/* Header */
+div#headerContainer{
+    width: 100%;
+    background-color: darkslategrey;
+    position: fixed;
+}
+div#headerContent{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+div#fitnessLogoWrapper{
+    width: 50%;
+}
+img#fitnessLogo{
+    width: 175px;
+    height: 60px;
+    object-fit: contain;
+}
+ul#headerList{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-transform: uppercase;
+}
+Link#headerListItem{
+ text-decoration: none;
+ color: white;
+}
+
+/* home page */
+div#home{
+    height: 100vh;
+    background-color: burlywood;
+}
+div#services{
+    height: 100vh;
+    background-color: cadetblue;
+}
+div#joinNow{
+    height: 100vh;
+    background-color: chocolate;
+}
+div#price{
+    height: 100vh;
+    background-color: darkgray;
+}
+div#team{
+    height: 100vh;
+    background-color: darkolivegreen;
+}
+div#footer{
+    height: 100px;
+    background-color: darkslategrey;
+}
