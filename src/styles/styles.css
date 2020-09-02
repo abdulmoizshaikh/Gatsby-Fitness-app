@@ -1,57 +1,190 @@
-/* Header */
-div#headerContainer{
-    width: 100%;
-    background-color: darkslategrey;
-    position: fixed;
-}
-div#headerContent{
-   width: 90%;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
-}
-div#fitnessLogoWrapper{
-    width: 50%;
-}
-img#fitnessLogo{
-    width: 175px;
-    height: 60px;
-    object-fit: contain;
-}
-ul#headerList{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    text-transform: uppercase;
-}
-Link#headerListItem{
- text-decoration: none;
- color: white;
+/* global style by tag name */
+html {
+  scroll-behavior: smooth;
 }
 
-/* home page */
-div#home{
-    height: 100vh;
-    background-color: burlywood;
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
 }
-div#services{
-    height: 100vh;
-    background-color: cadetblue;
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
-div#joinNow{
-    height: 100vh;
-    background-color: chocolate;
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
 }
-div#price{
-    height: 100vh;
-    background-color: darkgray;
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(51, 51, 51, 0.8);
 }
-div#team{
-    height: 100vh;
-    background-color: darkolivegreen;
+
+p {
+  margin: 0px;
 }
-div#footer{
-    height: 100px;
-    background-color: darkslategrey;
+
+/* text-align */
+
+.text-center {
+  text-align: center;
+}
+
+/* main */
+
+div#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* display: flex;
+    justify-content: center; */
+}
+
+div#content {
+  width: 90%;
+  border: 2px solid rebeccapurple;
+}
+
+/* header */
+
+ul > a {
+  transition: 0.5 all;
+}
+
+nav#navbar {
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  height: 75px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  display: flex;
+}
+
+/* div#header-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+} */
+
+div#fitness-logo-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+img#fitness-logo {
+  width: 175px;
+  height: 60px;
+  object-fit: contain;
+}
+
+ul#header-list {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-transform: uppercase;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#header-listItem {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+#header-listItem::after {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* home section */
+
+div#home {
+  height: 100vh;
+  /* background-image: url('../../assets/images/bg_pattern.png'); */
+}
+
+/* services section */
+
+div#services {
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+/* join  now section */
+
+div#joinNow {
+  height: 100vh;
+  background-color: chocolate;
+}
+
+/* price section */
+
+div#price {
+  height: 100vh;
+  background-color: darkgray;
+}
+
+/* team section */
+
+div#team {
+  /* height: 100vh; */
+  background-color: darkolivegreen;
+}
+
+#team-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+#team-subtitle > strong {
+  text-transform: uppercase;
+}
+
+#team-subtitle > span {
+  border-bottom: 2px solid black;
+}
+
+#team-subtitle {
+  font-size: 40px;
+}
+
+.team-card-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#team-card {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#team-image-wrapper {
+  width: 100%;
+  background-color: red;
+}
+
+#team-image {
+  width: inherit;
+}
+
+/* footer section */
+
+div#footer {
+  height: 100px;
+  background-color: darkslategrey;
 }
