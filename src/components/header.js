@@ -16,16 +16,16 @@ export default function Header() {
   }
   return (
     <nav id="navbar">
-      {/* <div id="header-content"> */}{" "}
-      <div id="fitness-logo-wrapper">
-        <img src={images.fitnesslogo} alt="fitness logo" id="fitness-logo" />
+      <div className="content">
+        <div id="fitness-logo-wrapper">
+          <img src={images.fitnesslogo} alt="fitness logo" id="fitness-logo" />
+        </div>
+        <ul id="header-list">
+          {constants.headerListItem.map(({ to, title }) => (
+            <ListItem to={to} title={title} />
+          ))}
+        </ul>
       </div>
-      <ul id="header-list">
-        {constants.headerListItem.map(({ to, title }) => (
-          <ListItem to={to} title={title} />
-        ))}
-      </ul>
-      {/* </div> */}
     </nav>
   )
 }

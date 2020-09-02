@@ -7,7 +7,7 @@ import Services from './services';
 import JoinNow from './joinNow';
 import Price from './price';
 import Team from './team';
-// import Footer from "./footer";
+import Footer from "./footer";
 /**
  * Bootstrap global style.css
  */
@@ -24,7 +24,7 @@ export default function Main() {
       <JoinNow />
       <Price />
       <Team />
-      {/* <Footer /> */}
+      <Footer />
       {/* </div> */}
     </div>)
 }

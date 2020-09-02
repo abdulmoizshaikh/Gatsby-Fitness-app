@@ -5,10 +5,10 @@ import * as images from '../../assets/images'
 export default function Home() {
     return (
         <div id="home">
-            <Carousel>
+            <Carousel >
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 vh-100"
                         src={images.banner1}
                         alt="First slide"
                     />
@@ -17,9 +17,9 @@ export default function Home() {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className="carousel-item">
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 vh-100"
                         src={images.banner2}
                         alt="Third slide"
                     />
@@ -31,7 +31,7 @@ export default function Home() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 vh-100"
                         src={images.banner3}
                         alt="Third slide"
                     />
