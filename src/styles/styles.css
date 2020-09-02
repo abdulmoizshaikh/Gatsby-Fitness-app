@@ -30,7 +30,6 @@ p {
 }
 
 /* text-align */
-
 .text-center {
   text-align: center;
 }
@@ -38,20 +37,14 @@ p {
 .content {
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
-
 /* main */
-
 div#container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  /* display: flex;
-    justify-content: center; */
 }
 
 div#content {
@@ -76,6 +69,10 @@ nav#navbar {
   display: flex;
 }
 
+div#inner-nav {
+  display: flex;
+  justify-content: space-between;
+}
 
 div#fitness-logo-wrapper {
   width: 60%;
@@ -105,7 +102,7 @@ ul#header-list {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  font-family: 'Raleway-Light';
+  font-family: "Raleway-Light";
 }
 
 #header-listItem::after {
@@ -116,8 +113,8 @@ ul#header-list {
 
 div#home {
 }
-.carousel-item{
-  background-image: url('../../assets/images/bg_pattern.png');
+.carousel-item {
+  background-image: url("../../assets/images/bg_pattern.png");
 }
 .vh-100 {
   height: 100vh;
@@ -126,7 +123,17 @@ div#home {
 
 div#services {
   height: 100vh;
-  background-color: cadetblue;
+}
+
+p.card-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+#socail-logos-wrapper {
+  text-align: center;
+}
+.icon-wrapper {
+  margin: 10px;
 }
 
 /* join  now section */
@@ -147,7 +154,6 @@ div#price {
 
 div#team {
   /* height: 100vh; */
-  background-color: darkolivegreen;
 }
 
 #team-title {
