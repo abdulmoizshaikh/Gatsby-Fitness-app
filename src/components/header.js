@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import constants from "../config/constants"
+import constant from "../config/constant"
 import * as images from "../../assets/images"
 
 export default function Header() {
@@ -26,8 +26,8 @@ export default function Header() {
             />
           </div>
           <ul id="header-list">
-            {constants.headerListItem.map(({ to, title }) => (
-              <ListItem to={to} title={title} />
+            {constant.headerListItem.map(({ to, title }, i) => (
+              <ListItem to={to} title={title} key={i} />
             ))}
           </ul>
         </div>
@@ -36,8 +36,10 @@ export default function Header() {
   )
 }
 
-const ListItem = ({ to, title }) => (
-  <Link to={to} id="header-listItem">
-    {title}
-  </Link>
-)
+const ListItem = ({ to, title }) => {
+  return (
+    <Link to={to} id="header-listItem">
+      {title}
+    </Link>
+  )
+}

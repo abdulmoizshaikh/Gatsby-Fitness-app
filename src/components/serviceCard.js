@@ -9,7 +9,7 @@ export default function ServiceCard(props) {
       </div>
       <p className="card-title">{cardTitle}</p>
       <p className="">{cardText}</p>
-      <button type="button" class="btn btn-secondary">
+      <button type="button" className="btn btn-secondary">
         Learn more
       </button>
     </div>

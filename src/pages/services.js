@@ -6,13 +6,15 @@ export default function Services() {
   return (
     <div id="services">
       <div className="content">
-        <p id="team-title">GOODNESS FORM OUR RUPIZA</p>
-        <p id="team-subtitle">
-          <span>
-            <strong>OUR </strong>
-          </span>
-          SERVICES
-        </p>
+        <div>
+          <p id="team-title">GOODNESS FORM OUR RUPIZA</p>
+          <p id="team-subtitle">
+            <span>
+              <strong>OUR </strong>
+            </span>
+            SERVICES
+          </p>
+        </div>
         <div className="team-card-wrapper">
           <ServiceCard
             src={images.services3}
