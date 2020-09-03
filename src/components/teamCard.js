@@ -1,8 +1,5 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { linked } from "@fortawesome/free-solid-svg-icons"
-// import { face } from "@fortawesome/fontawesome-svg-core"
-import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 export default function TeamCard(props) {
   const { src } = props
