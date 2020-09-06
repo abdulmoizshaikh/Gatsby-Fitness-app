@@ -20,7 +20,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 export default function Main() {
   return (
     <div id="container">
-      {/* <div id="content"> */}
       <Header />
       <Home />
       <Services />
@@ -28,7 +27,6 @@ export default function Main() {
       <Price />
       <Team />
       <Footer />
-      {/* </div> */}
     </div>
   )
 }

@@ -1,38 +1,50 @@
 import React from "react"
 import Carousel from "react-bootstrap/Carousel"
-import constant from "../config/constant"
 import * as images from "../../assets/images/index"
 
-export default function CarouselComp(props) {
-  const { images } = props
+const CarouselComp = props => {
+  // const { images } = props
   return (
     <Carousel>
-      {constant.carouselItem.map(({ alt, title, description }, i) => {
-        console.log("alt, title, description", alt, title, description)
-        console.log("images[i]", images[i])
-        return (
-          <CarouselItem
-            key={title}
-            alt={alt}
-            title={title}
-            description={description}
-            src={images.banner1}
-          />
-        )
-      })}
+      <Carousel.Item>
+        <img
+          className="d-block w-100 vh-100"
+          src={images.banner1}
+          alt="first slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100 vh-100"
+          src={images.banner2}
+          alt="second slide"
+        />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100 vh-100"
+          src={images.banner3}
+          alt="third slide"
+        />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
   )
 }
 
-const CarouselItem = ({ alt, src, title, description }) => {
-  // console.log(" alt, src, title, description ", alt, src, title, description)
-  return (
-    <Carousel.Item>
-      <img className="d-block w-100 vh-100" src={src} alt={alt} />
-      <Carousel.Caption>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-  )
-}
+export default CarouselComp
