@@ -15,15 +15,6 @@ export default function Header() {
     }
   }
 
-  window.onclick = () => {
-    let navHeight = document.getElementById("navbar").clientHeight
-    console.log("navHeight in onLoad", navHeight)
-    document.getElementById("services").style.paddingTop = `${navHeight}px`
-    document.getElementById("joinNow").style.paddingTop = `${navHeight}px`
-    document.getElementById("price").style.paddingTop = `${navHeight}px`
-    document.getElementById("team").style.paddingTop = `${navHeight}px`
-  }
-
   return (
     <nav id="navbar">
       <div className="content">

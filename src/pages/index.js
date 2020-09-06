@@ -18,6 +18,17 @@ import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 export default function Main() {
+  // window.onclick = setPaddingTop
+
+  // function setPaddingTop() {
+  //   let navHeight = document.getElementById("navbar").clientHeight + 10
+  //   console.log("navHeight", navHeight)
+  //   document.getElementById("services").style.paddingTop = `${navHeight}px`
+  //   document.getElementById("joinNow").style.paddingTop = `${navHeight}px`
+  //   document.getElementById("price").style.paddingTop = `${navHeight}px`
+  //   document.getElementById("team").style.paddingTop = `${navHeight}px`
+  // }
+
   return (
     <div id="container">
       <Header />
