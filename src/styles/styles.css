@@ -60,7 +60,6 @@ ul > a {
 
 nav#navbar {
   width: 100%;
-  height: 75px;
   position: fixed;
   top: 0;
   right: 0;
@@ -140,7 +139,8 @@ p.card-title {
 
 div#joinNow {
   height: 100vh;
-  background-color: chocolate;
+  background-color: #474747;
+  color: #ffffff;
 }
 
 /* price section */

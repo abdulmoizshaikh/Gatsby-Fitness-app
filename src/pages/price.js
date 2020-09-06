@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react"
 
 export default function Price() {
-    return (
-        <div id="price">
-            <p>This is Pricing page</p>
-        </div>
-    )
+  return (
+    <div id="price">
+      <div className="content">
+        <p>This is Pricing page</p>
+      </div>
+    </div>
+  )
 }

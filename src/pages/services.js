@@ -5,7 +5,10 @@ import * as images from "../../assets/images"
 export default function Services() {
   return (
     <div id="services">
-      <div className="content">
+      <div
+        className="content"
+        // style={{ paddingTop: document.getElementById("navbar").clientHeight }}
+      >
         <div>
           <p id="team-title">GOODNESS FORM OUR RUPIZA</p>
           <p id="team-subtitle">
