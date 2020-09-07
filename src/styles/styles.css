@@ -2,11 +2,17 @@
 html {
   scroll-behavior: smooth;
 }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 .w-50 {
   width: 50%;
 }
-.h-400 {
-  /* height: 400px; */
+.h-100 {
+  /* height: 100%; */
 }
 /* width */
 ::-webkit-scrollbar {
@@ -42,6 +48,8 @@ p {
 .content {
   width: 90%;
   margin: 0 auto;
+  /* background: brown; */
+  height: 100%;
 }
 
 /* main */
@@ -121,12 +129,7 @@ ul#header-list {
 div#home {
   height: 100vh;
 }
-/* .carousel-item {
-  background-image: url("../../assets/images/bg_pattern.png");
-} */
-.vh-100 {
-  height: 100px;
-}
+
 /* services section */
 
 div#services {
@@ -149,24 +152,50 @@ p.card-title {
 
 div#joinNow {
   /* height: 100vh; */
-  /* background-color: #474747; */
-  background-color: #eeeeee;
+  height: 600px;
+  background-color: #474747;
+  /* background-color: #eeeeee; */
   color: #ffffff;
   padding-top: 80px;
 }
 div#join-now-inner-container {
   display: flex;
+  box-sizing: border-box;
+  background: rebeccapurple;
+  height: 400px;
+}
+div.signup-form {
+  background: #474747;
+  display: inline-grid;
+  align-items: center;
 }
 div.input-wrapper {
-  background-color: red;
-  border-bottom-color: #ffffff;
-  border-bottom-width: 2px;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid;
+  width: 95%;
+  margin: 0 auto;
 }
 .input {
-  width: 100%;
-  border: none;
   background: #474747;
+  border-style: none;
+  border: none;
+  width: 90%;
+  border-radius: 0px;
 }
+
+.textarea {
+  height: 100px;
+  background: #474747;
+  border: none;
+  border-style: none;
+  width: 90%;
+}
+.signup-btn {
+  border: 1px solid #ffffff !important;
+}
+
 /* price section */
 
 div#price {

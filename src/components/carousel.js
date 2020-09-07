@@ -8,7 +8,8 @@ const CarouselComp = props => {
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100 vh-100"
+          style={{ height: props.height }}
+          className="d-block w-100"
           src={images.banner1}
           alt="first slide"
         />
@@ -20,7 +21,8 @@ const CarouselComp = props => {
 
       <Carousel.Item>
         <img
-          className="d-block w-100 vh-100"
+          style={{ height: props.height }}
+          className="d-block w-100"
           src={images.banner2}
           alt="second slide"
         />
@@ -32,7 +34,8 @@ const CarouselComp = props => {
 
       <Carousel.Item>
         <img
-          className="d-block w-100 vh-100"
+          style={{ height: props.height }}
+          className="d-block w-100"
           src={images.banner3}
           alt="third slide"
         />

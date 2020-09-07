@@ -12,8 +12,10 @@ export default function JoinNow() {
           </span>
           NOW
         </p>
+
         <div id="join-now-inner-container">
-          <div className="w-50">
+          {/* signup form  */}
+          <div className="signup-form w-50">
             <div className="input-wrapper">
               <input className="input" placeholder="First Name" />
             </div>
@@ -21,14 +23,16 @@ export default function JoinNow() {
               <input className="input" placeholder="Valid Email Id" />
             </div>
             <div className="input-wrapper">
-              <input className="input" placeholder="Message" />
+              <textarea className="textarea" placeholder="Message" />
             </div>
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="btn btn-secondary signup-btn">
               Start Now
             </button>
           </div>
-          <div className="w-50 h-400">
-            <CarouselComp />
+
+          {/* carousel component */}
+          <div className="w-50">
+            <CarouselComp height="400px" />
           </div>
         </div>
       </div>
