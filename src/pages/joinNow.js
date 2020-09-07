@@ -1,6 +1,5 @@
 import React from "react"
-// import CarouselComp from "../components/carousel"
-// import * as images from "../../assets/images"
+import CarouselComp from "../components/carousel"
 
 export default function JoinNow() {
   return (
@@ -13,19 +12,25 @@ export default function JoinNow() {
           </span>
           NOW
         </p>
-      </div>
-      <div>
-        {/* <CarouselComp
-          images={[
-            {
-              banner1: images.banner1,
-              banner2: images.banner2,
-              banner3: images.banner3,
-            },
-          ]}
-        />
- */}
-        <div></div>
+        <div id="join-now-inner-container">
+          <div className="w-50">
+            <div className="input-wrapper">
+              <input className="input" placeholder="First Name" />
+            </div>
+            <div className="input-wrapper">
+              <input className="input" placeholder="Valid Email Id" />
+            </div>
+            <div className="input-wrapper">
+              <input className="input" placeholder="Message" />
+            </div>
+            <button type="button" className="btn btn-secondary">
+              Start Now
+            </button>
+          </div>
+          <div className="w-50 h-400">
+            <CarouselComp />
+          </div>
+        </div>
       </div>
     </div>
   )
