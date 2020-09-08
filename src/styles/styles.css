@@ -151,10 +151,8 @@ p.card-title {
 /* join  now section */
 
 div#joinNow {
-  /* height: 100vh; */
-  height: 600px;
+  height: 100vh;
   background-color: #474747;
-  /* background-color: #eeeeee; */
   color: #ffffff;
   padding-top: 80px;
 }
@@ -192,29 +190,64 @@ div.input-wrapper {
   border-style: none;
   width: 90%;
 }
+.signup-btn-wrapper {
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto;
+}
 .signup-btn {
   border: 1px solid #ffffff !important;
+  width: 100%;
 }
 
 /* price section */
 
 div#price {
-  height: 100vh;
-  background-color: darkgray;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
+div.price-box {
+  border: 5px solid black;
+  text-align: center;
+  margin-top: 50px;
+}
+p.plan-name {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+p.plan-amount {
+  font-size: 45px;
+}
+
+.ordernow-btn {
+  width: 150px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
 /* team section */
 
 div#team {
-  /* height: 100vh; */
   padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f8f8f8;
 }
 
 #team-title {
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 0em;
+}
+.img-title {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#team-subtitle {
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 #team-subtitle > strong {
@@ -223,10 +256,6 @@ div#team {
 
 #team-subtitle > span {
   border-bottom: 2px solid black;
-}
-
-#team-subtitle {
-  font-size: 40px;
 }
 
 .team-card-wrapper {

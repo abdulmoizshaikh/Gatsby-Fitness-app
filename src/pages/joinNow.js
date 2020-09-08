@@ -25,9 +25,11 @@ export default function JoinNow() {
             <div className="input-wrapper">
               <textarea className="textarea" placeholder="Message" />
             </div>
-            <button type="button" className="btn btn-secondary signup-btn">
-              Start Now
-            </button>
+            <div className="signup-btn-wrapper">
+              <button type="button" className="btn btn-secondary signup-btn">
+                Start Now
+              </button>
+            </div>
           </div>
 
           {/* carousel component */}
