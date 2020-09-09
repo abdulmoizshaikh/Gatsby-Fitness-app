@@ -11,8 +11,8 @@ export default function Price() {
           </span>
           PLANS
         </p>
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
             <PricePlanCard title="STARTER" amount="$ 0" />
             <PricePlanCard title="PREMIUM" amount="$ 59" />
             <PricePlanCard title="ULTIMATE" amount="$ 99" />
@@ -25,7 +25,7 @@ export default function Price() {
 
 const PricePlanCard = props => {
   return (
-    <div class="col-sm">
+    <div className="col-sm">
       <div className="price-box">
         <p className="plan-name">{props.title}</p>
         <p className="plan-amount">{props.amount}</p>

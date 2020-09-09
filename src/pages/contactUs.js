@@ -5,9 +5,9 @@ export default function ContactUs() {
   return (
     <div id="contactUs">
       <div className="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
               <p className="contactus-title">Socialize .</p>
               <div id="icon-container">
                 <div className="icon-div" id="facebook">
@@ -54,7 +54,7 @@ export default function ContactUs() {
                 </div>
               </div>
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <p className="contactus-title">Hire us .</p>
               <p className="contactus-title">
                 lets start a new project together
