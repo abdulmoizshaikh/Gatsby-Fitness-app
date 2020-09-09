@@ -136,8 +136,8 @@ div#home {
 /* services section */
 
 div#services {
-  height: 100vh;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 p.card-title {
@@ -293,7 +293,7 @@ div#contactUs {
   font-size: 25px;
 }
 div#icon-container {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
 }
 .icon-div {
