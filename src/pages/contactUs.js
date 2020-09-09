@@ -10,36 +10,48 @@ export default function ContactUs() {
             <div class="col-sm">
               <p className="contactus-title">Socialize .</p>
               <div id="icon-container">
-                <a href="/#" className="icon-wrapper b-10">
+                <div className="icon-div" id="facebook">
                   <FontAwesomeIcon
+                    size="lg"
                     color="#ffffff"
                     icon={["fab", "facebook-f"]}
                   />
-                </a>
-                <a href="/#" className="icon-wrapper b-10">
-                  <FontAwesomeIcon color="#ffffff" icon={["fab", "twitter"]} />
-                </a>
-                <a href="/#" className="icon-wrapper b-10">
+                </div>
+                <div className="icon-div" id="twitter">
                   <FontAwesomeIcon
+                    size="lg"
+                    color="#ffffff"
+                    icon={["fab", "twitter"]}
+                  />
+                </div>
+                <div className="icon-div" id="google-plus">
+                  <FontAwesomeIcon
+                    size="lg"
                     color="#ffffff"
                     icon={["fab", "google-plus-square"]}
                   />
-                </a>
-                <a href="/#" className="icon-wrapper b-10">
+                </div>
+                <div className="icon-div" id="linkedin">
                   <FontAwesomeIcon
+                    size="lg"
                     color="#ffffff"
                     icon={["fab", "linkedin-in"]}
                   />
-                </a>
-                <a href="/#" className="icon-wrapper b-10">
-                  <FontAwesomeIcon color="#ffffff" icon={["fab", "youtube"]} />
-                </a>
-                <a href="/#" className="icon-wrapper b-10">
+                </div>
+                <div className="icon-div" id="youtube">
                   <FontAwesomeIcon
+                    size="lg"
+                    color="#ffffff"
+                    icon={["fab", "youtube"]}
+                  />
+                </div>
+                <div className="icon-div" id="instagram">
+                  <FontAwesomeIcon
+                    size="lg"
                     color="#ffffff"
                     icon={["fab", "instagram-square"]}
                   />
-                </a>
+                </div>
               </div>
             </div>
             <div class="col-sm">
