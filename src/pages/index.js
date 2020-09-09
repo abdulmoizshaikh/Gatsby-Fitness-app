@@ -11,6 +11,7 @@ import Footer from "./footer"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
+import ContactUs from "./contactUs"
 
 /**
  * Bootstrap global style.css
@@ -37,6 +38,7 @@ export default function Main() {
       <JoinNow />
       <Price />
       <Team />
+      <ContactUs />
       <Footer />
     </div>
   )
