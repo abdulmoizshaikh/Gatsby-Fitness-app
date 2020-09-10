@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "../styles/styles.css"
 
 import Home from "./home"
@@ -21,20 +21,22 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 export default function Main() {
-  var prevScrollpos = window.pageYOffset
-  window.onscroll = () => {
-    // When the user scrolls down 700px from the top of the document, show the button
-    scrollFunction()
+  useEffect(() => {
+    var prevScrollpos = window.pageYOffset
+    window.onscroll = () => {
+      // When the user scrolls down 700px from the top of the document, show the button
+      scrollFunction()
 
-    // for header scroll
-    var currentScrollPos = window.pageYOffset
-    if (currentScrollPos === prevScrollpos) {
-      document.getElementById("navbar").style.backgroundColor = "transparent"
-    } else {
-      document.getElementById("navbar").style.backgroundColor =
-        "rgba(51, 51, 51, 0.8)"
+      // for header scroll
+      var currentScrollPos = window.pageYOffset
+      if (currentScrollPos === prevScrollpos) {
+        document.getElementById("navbar").style.backgroundColor = "transparent"
+      } else {
+        document.getElementById("navbar").style.backgroundColor =
+          "rgba(51, 51, 51, 0.8)"
+      }
     }
-  }
+  }, []) // passing an empty array as second argument triggers the callback in useEffect only after the initial render thus replicating `componentDidMount` lifecycle behaviour
 
   function scrollFunction() {
     //Get the button
