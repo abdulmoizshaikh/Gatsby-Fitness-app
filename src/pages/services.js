@@ -18,22 +18,25 @@ export default function Services() {
             SERVICES
           </p>
         </div>
-        <div className="team-card-wrapper">
-          <ServiceCard
-            src={images.services3}
-            cardTitle="YOGA CLASSES"
-            cardText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
-          />
-          <ServiceCard
-            src={images.services1}
-            cardTitle="POWER LIFTING"
-            cardText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
-          />
-          <ServiceCard
-            src={images.services2}
-            cardTitle="SHAPING"
-            cardText="Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
-          />
+        {/* <div className="team-card-wrapper"> */}
+        <div className="container">
+          <div className="row">
+            <ServiceCard
+              src={images.services3}
+              cardTitle="YOGA CLASSES"
+              cardText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+            />
+            <ServiceCard
+              src={images.services1}
+              cardTitle="POWER LIFTING"
+              cardText="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+            />
+            <ServiceCard
+              src={images.services2}
+              cardTitle="SHAPING"
+              cardText="Lorem ipsum dolor sit amet, consectetur ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod "
+            />
+          </div>
         </div>
       </div>
     </div>

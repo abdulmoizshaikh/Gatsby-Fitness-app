@@ -15,10 +15,14 @@ export default function Team() {
             Out Team
           </p>
         </div>
-        <div className="team-card-wrapper">
-          <TeamCard src={images.team1} />
-          <TeamCard src={images.team2} />
-          <TeamCard src={images.team3} />
+        <div className="container">
+          <div className="row">
+            {/* <div className="team-card-wrapper"> */}
+            <TeamCard src={images.team1} />
+            <TeamCard src={images.team2} />
+            <TeamCard src={images.team3} />
+            {/* </div> */}
+          </div>
         </div>
       </div>
     </div>
