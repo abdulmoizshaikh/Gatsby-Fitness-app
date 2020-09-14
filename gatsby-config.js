@@ -7,5 +7,5 @@
 module.exports = {
   /* Your site config here */
   presets: ["@babel/preset-react", "@babel/preset-env"],
-  plugins: ["emotion"],
+  plugins: [],
 }
