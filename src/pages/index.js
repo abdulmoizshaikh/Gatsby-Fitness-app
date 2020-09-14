@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import "../styles/styles.css"
 
 import Home from "./home"
@@ -14,15 +14,30 @@ import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
 import ContactUs from "./contactUs"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
-
+/**for react spinners */
+import { css } from "@emotion/core"
+import PacmanLoader from "react-spinners/PacmanLoader"
 /**
  * Bootstrap global style.css
  */
 import "bootstrap/dist/css/bootstrap.min.css"
 
+// Can be a string as well. Need to ensure each key-value pair ends with ;
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: #333;
+`
+
 export default function Main() {
+  const [loading, setLoading] = useState(true)
+
   useEffect(() => {
     var prevScrollpos = window.pageYOffset
+
+    /**for hide spinner  in did mount*/
+    setLoading(false)
+
     window.onscroll = () => {
       // When the user scrolls down 700px from the top of the document, show the button
       scrollFunction()
@@ -64,18 +79,31 @@ export default function Main() {
 
   return (
     <div id="container">
-      <Header />
-      <Home />
-      <Services />
-      <JoinNow />
-      <Price />
-      <Team />
-      <ContactUs />
-      <Footer />
+      {loading ? (
+        <div className="sweet-loading">
+          <PacmanLoader
+            css={override}
+            size={100}
+            color={"#333"}
+            loading={loading}
+          />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <Home />
+          <Services />
+          <JoinNow />
+          <Price />
+          <Team />
+          <ContactUs />
+          <Footer />
 
-      <button onClick={topFunction} id="myBtn" title="Go to top">
-        <FontAwesomeIcon icon={faChevronUp} id="faChevronUp" />
-      </button>
+          <button onClick={topFunction} id="myBtn" title="Go to top">
+            <FontAwesomeIcon icon={faChevronUp} id="faChevronUp" />
+          </button>
+        </>
+      )}
     </div>
   )
 }
