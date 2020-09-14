@@ -6,6 +6,9 @@ const headerListItem = [
   { to: "#team", title: "Team" },
 ]
 
+const minWidth = 800
+
 export default {
   headerListItem,
+  minWidth,
 }

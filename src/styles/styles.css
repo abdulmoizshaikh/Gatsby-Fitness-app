@@ -70,6 +70,12 @@ div#content {
 
 /* header */
 
+/* hamburger */
+
+#hamburger-wrapper {
+  display: none;
+}
+
 ul > a {
   transition: 0.5 all;
 }
@@ -81,12 +87,12 @@ nav#navbar {
   right: 0;
   left: 0;
   z-index: 1030;
-  display: flex;
+  transition: 0.8s ease;
 }
 
 div#inner-nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 div#fitness-logo-wrapper {
@@ -103,7 +109,7 @@ img#fitness-logo {
 }
 
 ul#header-list {
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -111,26 +117,50 @@ ul#header-list {
   align-items: center;
   margin-bottom: 0;
   padding-left: 0;
+  overflow: hidden;
+  transition: 0.8ms ease;
+  height: auto;
+  transition-property: height;
+  transition-duration: 0.4s;
+  /* padding: 0px; */
 }
 
-#header-listItem {
+.header-listItem {
   text-decoration: none;
   color: white;
   font-size: 14px;
   font-family: "Raleway-Light";
 }
-#header-listItem:focus {
+.header-listItem:focus {
   text-decoration: underline;
 }
 
-#header-listItem::after {
-  transition: all 0.3s ease-in-out 0s;
+.header-listItem::after {
+  transition: 0.8s ease;
+  /* transition: all 0.3s ease-in-out 0s; */
 }
+
+/* ul#header-min-list {
+  width: 100%;
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#header-min-listItem {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Raleway-Light";
+  padding: 10px;
+  background-color: #333;
+} */
 
 /* home section */
-
+/* 
 div#home {
-}
+} */
 
 /* services section */
 
@@ -375,4 +405,43 @@ div#footer {
   border: 2px solid #333;
   background-color: #fff;
   color: #000000;
+}
+
+/* media queries for header */
+@media screen and (max-width: 800px) {
+  #hamburger-wrapper {
+    position: absolute;
+    display: block;
+    top: 0em;
+    right: 0em;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+  }
+
+  ul#header-list {
+    height: 0px;
+    background-color: #333;
+    /* padding: 10px; */
+  }
+  .content {
+    width: 100%;
+  }
+  #inner-nav {
+    display: block !important;
+  }
+
+  .header-listItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #header-list {
+    display: flex !important;
+    /* padding: 0px; */
+  }
 }
