@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <nav id="navbar">
-      <div className="content">
+      <div id="header-content">
         <div id="inner-nav">
           <div id="fitness-logo-wrapper">
             <img
