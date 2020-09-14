@@ -442,6 +442,7 @@ div#footer {
 @media screen and (min-width: 801px) {
   #header-list {
     display: flex !important;
+    height: auto !important;
     /* padding: 0px; */
   }
 }
