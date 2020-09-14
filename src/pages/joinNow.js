@@ -18,19 +18,24 @@ export default function JoinNow() {
             {/* signup form  */}
             {/* <div className="signup-form w-50"> */}
             <div className="col-sm">
-              <div className="input-wrapper">
-                <input className="input" placeholder="First Name" />
-              </div>
-              <div className="input-wrapper">
-                <input className="input" placeholder="Valid Email Id" />
-              </div>
-              <div className="input-wrapper">
-                <textarea className="textarea" placeholder="Message" />
-              </div>
-              <div className="signup-btn-wrapper">
-                <button type="button" className="btn btn-secondary signup-btn">
-                  Start Now
-                </button>
+              <div className="form">
+                <div className="input-wrapper">
+                  <input className="input" placeholder="First Name" />
+                </div>
+                <div className="input-wrapper">
+                  <input className="input" placeholder="Valid Email Id" />
+                </div>
+                <div className="input-wrapper">
+                  <textarea className="textarea" placeholder="Message" />
+                </div>
+                <div className="signup-btn-wrapper">
+                  <button
+                    type="button"
+                    className="btn btn-secondary signup-btn"
+                  >
+                    Start Now
+                  </button>
+                </div>
               </div>
             </div>
 

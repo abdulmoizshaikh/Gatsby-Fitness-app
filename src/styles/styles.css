@@ -206,6 +206,11 @@ div#join-now-inner-container {
   background: rebeccapurple;
   height: 400px;
 }
+.form {
+  height: 400px;
+  align-items: center;
+  display: grid;
+}
 div.signup-form {
   background: #474747;
   display: inline-grid;
@@ -224,7 +229,11 @@ div.input-wrapper {
   border-style: none;
   border: none;
   width: 90%;
+  color: #ffffff;
   border-radius: 0px;
+}
+.input:focus {
+  outline: none;
 }
 
 .textarea {
@@ -233,7 +242,14 @@ div.input-wrapper {
   border: none;
   border-style: none;
   width: 90%;
+  border: none;
+  color: #ffffff;
 }
+.textarea:focus {
+  outline-width: 0px;
+  outline: none !important;
+}
+
 .signup-btn-wrapper {
   border-style: none;
   display: flex;
