@@ -40,7 +40,7 @@ export default function Header() {
           onToggle={() => {
             if (!isOpen) {
               document.getElementById("header-list").style.display = "block"
-              document.getElementById("header-list").style.height = "220px"
+              document.getElementById("header-list").style.height = "210px"
             } else {
               document.getElementById("header-list").style.height = "0px"
             }

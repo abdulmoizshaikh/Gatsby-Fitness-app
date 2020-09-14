@@ -430,12 +430,14 @@ div#footer {
   #inner-nav {
     display: block !important;
   }
+  #fitness-logo-wrapper {
+    padding-left: 20px;
+  }
 
   .header-listItem {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
   }
 }
 
